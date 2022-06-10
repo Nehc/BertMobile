@@ -57,7 +57,7 @@ def message_reply(message):
     s = ans[it]
     m = torch.nn.Softmax(dim=1)
     prc = torch.max(m(out[0]))*100
-    bot.reply_to(message, f'{s}. ({prc}%).')
+    bot.reply_to(message, f'{s} ({prc:.2f}%)')
 
 #bot.polling(interval=3, timeout=45)
 bot.infinity_polling()
