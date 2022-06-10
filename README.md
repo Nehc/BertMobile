@@ -2,9 +2,9 @@
 
 Игрушечный пример для решения задачи [диалогового  бота](http://dumbot.ru/Home/MobileOperatorRate) с использованием архитектуры BERT. 
 
-Мы используем синтетически сгенерированные реплики на основе данных о тарифах оператора ([data.json](https://github.com/Nehc/BertMobile/blob/main/data.json)). намного лучше было бы иметь реальный датасет вопросов людей! 
+Используются синтетически сгенерированные реплики на основе данных о тарифах оператора ([data.json](https://github.com/Nehc/BertMobile/blob/main/data.json)). намного лучше было бы иметь реальный датасет вопросов людей! 
 
-Мы так же используем проверочный [датаcет](https://github.com/Nehc/BertMobile/blob/main/eval.json) всего из 10 вопросов, чего явно мало... 
+Так же используется проверочный [датаcет](https://github.com/Nehc/BertMobile/blob/main/eval.json) всего из 10 вопросов, чего явно мало... 
 
 Процесс обучения расписан [в этом Colab](https://colab.research.google.com/drive/1u1VM696xXkR4DSxlDN1rT3i4IROgFn9i?usp=sharing). 
 
