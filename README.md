@@ -13,3 +13,14 @@
     python telebot.py 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
     
 не забудьте подставить свой токен бота.
+
+Так же можно развернуть бота как docker посредством следующей последователньости команд:
+    
+    git clone https://github.com/Nehc/BertMobile.git
+    cd BertMobile
+    docker build --tag="<your_name>/telebot" .
+    docker run --user 1000:100 -tid --gpus all --name telebot --mount \
+    type=bind,src=/home/<your_name>/BertMobile,target=/home/telebot \
+    -e TG_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 <your_name>/telebot
+
+с поправкой на ваши локальные пути, имя пользователя и тп...
