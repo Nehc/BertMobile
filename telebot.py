@@ -1,4 +1,3 @@
-import os
 import sys
 import torch
 import telebot
@@ -12,11 +11,6 @@ else:
     if not token: 
         print('bot token needed...')
         quit()
-
-if len(sys.argv)>2:
-    my_chat_id = int(sys.argv[2])
-else: 
-    my_chat_id = int(os.getenv('MY_CHAT'))
 
 # открываем файл в режиме чтения
 with open('ans.json', 'r', encoding='UTF-8') as fr:
