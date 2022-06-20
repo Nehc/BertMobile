@@ -45,10 +45,8 @@ RUN pip install -r requirements.txt && \
 #USER "${NB_UID}"
 
 ARG TG_TOKEN=""
-ARG MY_CHAT=""
 
 ENV TG_TOKEN="${TG_TOKEN}" 
-ENV MY_CHAT="${MY_CHAT}" 
 
 # Configure container startup
 ENTRYPOINT ["python", "./telebot.py"]
